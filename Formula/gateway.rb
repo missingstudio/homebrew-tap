@@ -13,7 +13,7 @@ class Gateway < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/missingstudio/gateway/releases/download/v0.0.1/gateway_Darwin_arm64.tar.gz"
-      sha256 "8de45ba5c407c9d08baac5ae9e14dbcdb7d32f07ffd06af5e7221708fa9916b9"
+      sha256 "59494ff888374d1be3f11f58b57bc4702800ff017226f4cac4f7864799fffda9"
 
       def install
         bin.install "gateway"
@@ -21,7 +21,7 @@ class Gateway < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/missingstudio/gateway/releases/download/v0.0.1/gateway_Darwin_x86_64.tar.gz"
-      sha256 "c6034afc3dceba911d39e85d1c0d80284f4e389431e5f66c0902bf28aeb2fa4d"
+      sha256 "590acb72bcff7a5c1a048afa3e2b5a5352bb5af87296305e2d471072144c2946"
 
       def install
         bin.install "gateway"
@@ -32,7 +32,7 @@ class Gateway < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/missingstudio/gateway/releases/download/v0.0.1/gateway_Linux_arm64.tar.gz"
-      sha256 "b6130392aa94de58f22e211925322ae33e8660b52b3c15ab586c3cb23e815f9d"
+      sha256 "e192f8d03bb938cd9538c24328df3946ab8c47b1220f31b6cd3c95e0e0e136cc"
 
       def install
         bin.install "gateway"
@@ -40,7 +40,7 @@ class Gateway < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/missingstudio/gateway/releases/download/v0.0.1/gateway_Linux_x86_64.tar.gz"
-      sha256 "2008a45dce697ab44caae7375ddc74606405873629773279bad3f32e999cbc33"
+      sha256 "4e2d8370a6fd2bca2b80036f83a86ab68f28dfb9b351185ef0d1e0db1b3caaea"
 
       def install
         bin.install "gateway"
